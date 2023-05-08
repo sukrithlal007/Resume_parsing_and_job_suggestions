@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Suggestions</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="./static/style.css">
+    <script src="./static/script.js"></script>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+body {
+  background:url(static/image/JOBPIC.png);
+}
+    </style>
+
+</head>
+
+<body>
+
+
+<div class="container" style="background-image:url('{{ url_for('static',filename='image/JOBPIC.jpg')}}');">
+    <div class="row" style="padding: 20px;">
+        <div class="col-md-12" style="margin-bottom:10px;">
+            <h2>RESUME PARSER AND JOB SUGGESTIONS</h2>
+            <hr>
+
+            <form method="POST" action="suggest" id="suggestForm" name="suggestForm" enctype="multipart/form-data">
+                <input id="resumeDoc" class="resumeDoc" type="file" placeholder="Select Resume" name="resumeDoc"/>
+                <br>
+
+                <center>
+                    <button class="btn" id="submitBtn">Job Suggestions
+                        <i class="fa fa-search"></i>
+                    </button>
+                </center>
+
+                <center>
+                    <i id="loader" style="font-size: 50px;color: #1d3557; display: none;"
+                       class="fa fa-spinner fa-spin"></i>
+                </center>
+
+            </form>
+
+        </div>
+
+        <div class="col-md-12">
+            <div id="skillSet">
+
+            </div>
+        </div>
+
+
+        <div id="suggestedJobsTable" style="display: none;" class="col-md-12">
+
+
+            <table class="table">
+                <thead class="thead-dark">
+                <tr>
+                    <th>#</th>
+                    <th>Job Title</th>
+                    <th>Company Name</th>
+                    <th>Location</th>
+                    <th>Match</th>
+                </tr>
+                </thead>
+                <tbody id="suggestedJobs">
+
+                </tbody>
+            </table>
+
+
+        </div>
+
+
+    </div>
+
+</div>
+    <script>
+
+    </script>
+
+
+</body>
+
+</html>

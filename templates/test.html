@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042) -->
+<html
+  class="js sizes customelements history pointerevents postmessage webgl websockets cssanimations csscolumns csscolumns-width csscolumns-span csscolumns-fill csscolumns-gap csscolumns-rule csscolumns-rulecolor csscolumns-rulestyle csscolumns-rulewidth csscolumns-breakbefore csscolumns-breakafter csscolumns-breakinside flexbox picture srcset webworkers"
+  lang="zxx">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>JobBoard HTML-5 Template</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+  <link rel="stylesheet" href="./static/jobsco/bootstrap.min.css">
+  <link rel="stylesheet" href="./static/jobsco/owl.carousel.min.css">
+  <link rel="stylesheet" href="./static/jobsco/slicknav.css">
+  <link rel="stylesheet" href="./static/jobsco/animate.min.css">
+  <link rel="stylesheet" href="./static/jobsco/magnific-popup.css">
+  <link rel="stylesheet" href="./static/jobsco/fontawesome-all.min.css">
+  <link rel="stylesheet" href="./static/jobsco/themify-icons.css">
+  <link rel="stylesheet" href="./static/jobsco/slick.css">
+  <link rel="stylesheet" href="./static/jobsco/nice-select.css">
+  <link rel="stylesheet" href="./static/jobsco/style.css">
+  <script type="text/javascript" async="" src="./static/jobsco/analytics.js.download"
+    nonce="b9fe2e0e-1bf9-40bd-bc80-ca8961465e08"></script>
+  <script defer="" referrerpolicy="origin" src="./static/jobsco/s.js.download"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="./static/jobsco.js"></script>
+
+  <script
+    nonce="b9fe2e0e-1bf9-40bd-bc80-ca8961465e08">(function (w, d) { !function (dk, dl, dm, dn) { dk[dm] = dk[dm] || {}; dk[dm].executed = []; dk.zaraz = { deferred: [], listeners: [] }; dk.zaraz.q = []; dk.zaraz._f = function (dp) { return function () { var dq = Array.prototype.slice.call(arguments); dk.zaraz.q.push({ m: dp, a: dq }) } }; for (const dr of ["track", "set", "debug"]) dk.zaraz[dr] = dk.zaraz._f(dr); dk.zaraz.init = () => { var ds = dl.getElementsByTagName(dn)[0], dt = dl.createElement(dn), du = dl.getElementsByTagName("title")[0]; du && (dk[dm].t = dl.getElementsByTagName("title")[0].text); dk[dm].x = Math.random(); dk[dm].w = dk.screen.width; dk[dm].h = dk.screen.height; dk[dm].j = dk.innerHeight; dk[dm].e = dk.innerWidth; dk[dm].l = dk.location.href; dk[dm].r = dl.referrer; dk[dm].k = dk.screen.colorDepth; dk[dm].n = dl.characterSet; dk[dm].o = (new Date).getTimezoneOffset(); if (dk.dataLayer) for (const dy of Object.entries(Object.entries(dataLayer).reduce(((dz, dA) => ({ ...dz[1], ...dA[1] }))))) zaraz.set(dy[0], dy[1], { scope: "page" }); dk[dm].q = []; for (; dk.zaraz.q.length;) { const dB = dk.zaraz.q.shift(); dk[dm].q.push(dB) } dt.defer = !0; for (const dC of [localStorage, sessionStorage]) Object.keys(dC || {}).filter((dE => dE.startsWith("_zaraz_"))).forEach((dD => { try { dk[dm]["z_" + dD.slice(7)] = JSON.parse(dC.getItem(dD)) } catch { dk[dm]["z_" + dD.slice(7)] = dC.getItem(dD) } })); dt.referrerPolicy = "origin"; dt.src = "/cdn-cgi/zaraz/s.js?z=" + btoa(encodeURIComponent(JSON.stringify(dk[dm]))); ds.parentNode.insertBefore(dt, ds) };["complete", "interactive"].includes(dl.readyState) ? zaraz.init() : dk.addEventListener("DOMContentLoaded", zaraz.init) }(w, d, "zarazData", "script"); })(window, document);</script>
+</head>
+
+<body>
+  <header>
+    <div class="header-area header-transparent">
+      <div class="main-header header-sticky">
+        <div class="container">
+          <div class="menu-wrapper d-flex align-items-center justify-content-between">
+            <div class="left-content d-flex align-items-center">
+              <div class="logo mr-45">
+                
+              </div>
+
+
+            </div>
+
+            <div class="buttons">
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </header>
+  <main>
+
+    <div class="slider-area position-relative ">
+
+      <div class="single-sliders slider-height  gray-bg d-flex align-items-center">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-xl-6 col-lg-7">
+              <div class="hero-caption">
+                <span>Easiest way to find a perfect job</span>
+                <h1>RESUME PARSER AND JOB SUGGESTIONS </h1>
+
+                <div class="slider-btns">
+                  <form method="POST" action="/suggest" id="suggestForm" name="suggestForm"
+                    enctype="multipart/form-data">
+                    <input id="resumeDoc" class="resumeDoc" type="file" placeholder="Select Resume" name="resumeDoc">
+                    <button type="submit" class="btn hero-btn" id="submitBtn">Find Your Job</button>
+                    <!-- <a href="#" class="hero-btn2">Find Your Jobt</a>
+                    <a href="#" class="btn hero-btn">Upload Resume</a> -->
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-tittle">
+        <h2>jobs</h2>
+      </div>
+
+      <div class="hero-img">
+        <img src="./static/jobsco/hero-img.png" alt="">
+      </div>
+
+      <div class="hero-shape bounce-animate">
+        <img src="./static/jobsco/hero-shape.png" alt="">
+      </div>
+
+      <div class="hero-shape2">
+        <img src="./static/jobsco/hero-shape2.png" alt="">
+      </div>
+    </div>
+
+
+    <section class="top-jobs fix ">
+      <div id="showpiece" class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-8 col-lg-9 col-md-12">
+
+            <div class="section-tittle section-tittle3 text-center mb-10">
+              <span>1000+</span>
+              <h2>Browse From Our Top Jobs</h2>
+              <p>The basic idea behind this project is to provide ease to people for finding the best jobs based on
+                their skills that the person mentioned in their resume.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="results" class="container" style="display:none;">
+        <div class="row justify-content-center">
+          <div class="col-xl-8 col-lg-9 col-md-12">
+
+            <div class="section-tittle section-tittle3 text-center mb-10">
+              <span style="font-size: 4rem;">Skills</span>
+              <p><b id="skillSet">Skill1, Skill2, Skill3</b></p>
+              <h2>Job Suggestions</h2>
+              <table class="table">
+                <thead class="thead-dark">
+                  <tr>
+                    <th>#</th>
+                    <th>Job Title</th>
+                    <th>Company Name</th>
+                    <th>Location</th>
+                    <th>Match</th>
+                  </tr>
+                </thead>
+                <tbody id="suggestedJobs">
+
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid p-0">
+        <div class="single-top-jobs  slick-slide slick-cloned" data-slick-index="-4" aria-hidden="true" tabindex="-1"
+          style="width: 320px;">
+          <div class="services-ion">
+            <img src="./static/jobsco/job-iocn3.svg" alt="">
+          </div>
+          <div class="services-cap">
+            <h5><a href="#" tabindex="-1">Design &amp; creatives</a></h5>
+            <p>The automated process starts as soon as your clothes go into.</p>
+            <a href="#" class="product_btn" tabindex="-1">Apply Now</a>
+          </div>
+          <div class="stickers">
+            <span>Remote</span>
+          </div>
+        </div>
+        <div class="single-top-jobs  slick-slide slick-cloned" data-slick-index="-3" aria-hidden="true" tabindex="-1"
+          style="width: 320px;">
+          <div class="services-ion">
+            <img src="./static/jobsco/job-iocn4.svg" alt="">
+          </div>
+          <div class="services-cap">
+            <h5><a href="#" tabindex="-1">Design &amp; creatives</a></h5>
+            <p>The automated process starts as soon as your clothes go into.</p>
+            <a href="#" class="product_btn" tabindex="-1">Apply Now</a>
+          </div>
+        </div>
+        <div class="single-top-jobs  slick-slide slick-cloned" data-slick-index="-2" aria-hidden="true" tabindex="-1"
+          style="width: 320px;">
+          <div class="services-ion">
+            <img src="./static/jobsco/job-iocn5.svg" alt="">
+          </div>
+          <div class="services-cap">
+            <h5><a href="#" tabindex="-1">Design &amp; creatives</a></h5>
+            <p>The automated process starts as soon as your clothes go into.</p>
+            <a href="#" class="product_btn" tabindex="-1">Apply Now</a>
+          </div>
+        </div>
+        <div class="single-top-jobs  slick-slide slick-cloned slick-active" data-slick-index="-1" aria-hidden="false"
+          tabindex="-1" style="width: 320px;">
+          <div class="services-ion">
+            <img src="./static/jobsco/job-iocn2.svg" alt="">
+          </div>
+          <div class="services-cap">
+            <h5><a href="#" tabindex="0">Design &amp; creatives</a></h5>
+            <p>The automated process starts as soon as your clothes go into.</p>
+            <a href="#" class="product_btn" tabindex="0">Apply Now</a>
+          </div>
+          <div class="stickers">
+            <span>Remote</span>
+          </div>
+        </div>
+        <div class="single-top-jobs  slick-slide slick-current slick-active slick-center" data-slick-index="0"
+          aria-hidden="false" tabindex="0" style="width: 320px;">
+          <div class="services-ion">
+            <img src="./static/jobsco/job-iocn1.svg" alt="">
+          </div>
+          <div class="services-cap">
+            <h5><a href="#" tabindex="0">Design &amp; creatives</a></h5>
+            <p>The automated process starts as soon as your clothes go into.</p>
+            <a href="#" class="product_btn" tabindex="0">Apply Now</a>
+          </div>
+        </div>
+        <div class="single-top-jobs  slick-slide slick-active" data-slick-index="1" aria-hidden="false" tabindex="0"
+          style="width: 320px;">
+          <div class="services-ion">
+            <img src="./static/jobsco/job-iocn2.svg" alt="">
+          </div>
+          <div class="services-cap">
+            <h5><a href="#" tabindex="0">Design &amp; creatives</a></h5>
+            <p>The automated process starts as soon as your clothes go into.</p>
+            <a href="#" class="product_btn" tabindex="0">Apply Now</a>
+          </div>
+          <div class="stickers">
+            <span>Remote</span>
+          </div>
+        </div>
+        <div class="single-top-jobs  slick-slide slick-active" data-slick-index="2" aria-hidden="false" tabindex="0"
+          style="width: 320px;">
+          <div class="services-ion">
+            <img src="./static/jobsco/job-iocn3.svg" alt="">
+          </div>
+          <div class="services-cap">
+            <h5><a href="#" tabindex="0">Design &amp; creatives</a></h5>
+            <p>The automated process starts as soon as your clothes go into.</p>
+            <a href="#" class="product_btn" tabindex="0">Apply Now</a>
+          </div>
+          <div class="stickers">
+            <span>Remote</span>
+          </div>
+        </div>
+        <div class="single-top-jobs  slick-slide" data-slick-index="3" aria-hidden="true" tabindex="0"
+          style="width: 320px;">
+          <div class="services-ion">
+            <img src="./static/jobsco/job-iocn4.svg" alt="">
+          </div>
+          <div class="services-cap">
+            <h5><a href="#" tabindex="-1">Design &amp; creatives</a></h5>
+            <p>The automated process starts as soon as your clothes go into.</p>
+            <a href="#" class="product_btn" tabindex="-1">Apply Now</a>
+          </div>
+        </div>
+        <div class="single-top-jobs  slick-slide" data-slick-index="4" aria-hidden="true" tabindex="-1"
+          style="width: 320px;">
+          <div class="services-ion">
+            <img src="./static/jobsco/job-iocn5.svg" alt="">
+          </div>
+          <div class="services-cap">
+            <h5><a href="#" tabindex="-1">Design &amp; creatives</a></h5>
+            <p>The automated process starts as soon as your clothes go into.</p>
+            <a href="#" class="product_btn" tabindex="-1">Apply Now</a>
+          </div>
+        </div>
+        <div class="single-top-jobs  slick-slide" data-slick-index="5" aria-hidden="true" tabindex="-1"
+          style="width: 320px;">
+          <div class="services-ion">
+            <img src="./static/jobsco/job-iocn2.svg" alt="">
+          </div>
+          <div class="services-cap">
+            <h5><a href="#" tabindex="-1">Design &amp; creatives</a></h5>
+            <p>The automated process starts as soon as your clothes go into.</p>
+            <a href="#" class="product_btn" tabindex="-1">Apply Now</a>
+          </div>
+          <div class="stickers">
+            <span>Remote</span>
+          </div>
+        </div>
+        <div class="single-top-jobs  slick-slide slick-cloned" data-slick-index="6" aria-hidden="true" tabindex="-1"
+          style="width: 320px;">
+          <div class="services-ion">
+            <img src="./static/jobsco/job-iocn1.svg" alt="">
+          </div>
+          <div class="services-cap">
+            <h5><a href="#" tabindex="-1">Design &amp; creatives</a></h5>
+            <p>The automated process starts as soon as your clothes go into.</p>
+            <a href="#" class="product_btn" tabindex="-1">Apply Now</a>
+          </div>
+        </div>
+        <div class="single-top-jobs  slick-slide slick-cloned slick-center" data-slick-index="7" aria-hidden="true"
+          tabindex="-1" style="width: 320px;">
+          <div class="services-ion">
+            <img src="./static/jobsco/job-iocn2.svg" alt="">
+          </div>
+          <div class="services-cap">
+            <h5><a href="#" tabindex="-1">Design &amp; creatives</a></h5>
+            <p>The automated process starts as soon as your clothes go into.</p>
+            <a href="#" class="product_btn" tabindex="-1">Apply Now</a>
+          </div>
+          <div class="stickers">
+            <span>Remote</span>
+          </div>
+        </div>
+        <div class="single-top-jobs  slick-slide slick-cloned" data-slick-index="8" aria-hidden="true" tabindex="-1"
+          style="width: 320px;">
+          <div class="services-ion">
+            <img src="./static/jobsco/job-iocn3.svg" alt="">
+          </div>
+          <div class="services-cap">
+            <h5><a href="#" tabindex="-1">Design &amp; creatives</a></h5>
+            <p>The automated process starts as soon as your clothes go into.</p>
+            <a href="#" class="product_btn" tabindex="-1">Apply Now</a>
+          </div>
+          <div class="stickers">
+            <span>Remote</span>
+          </div>
+        </div>
+        <div class="single-top-jobs  slick-slide slick-cloned" data-slick-index="9" aria-hidden="true" tabindex="-1"
+          style="width: 320px;">
+          <div class="services-ion">
+            <img src="./static/jobsco/job-iocn4.svg" alt="">
+          </div>
+          <div class="services-cap">
+            <h5><a href="#" tabindex="-1">Design &amp; creatives</a></h5>
+            <p>The automated process starts as soon as your clothes go into.</p>
+            <a href="#" class="product_btn" tabindex="-1">Apply Now</a>
+          </div>
+        </div>
+        <div class="single-top-jobs  slick-slide slick-cloned" data-slick-index="10" aria-hidden="true" tabindex="-1"
+          style="width: 320px;">
+          <div class="services-ion">
+            <img src="./static/jobsco/job-iocn5.svg" alt="">
+          </div>
+          <div class="services-cap">
+            <h5><a href="#" tabindex="-1">Design &amp; creatives</a></h5>
+            <p>The automated process starts as soon as your clothes go into.</p>
+            <a href="#" class="product_btn" tabindex="-1">Apply Now</a>
+          </div>
+        </div>
+        <div class="single-top-jobs  slick-slide slick-cloned" data-slick-index="11" aria-hidden="true" tabindex="-1"
+          style="width: 320px;">
+          <div class="services-ion">
+            <img src="./static/jobsco/job-iocn2.svg" alt="">
+          </div>
+          <div class="services-cap">
+            <h5><a href="#" tabindex="-1">Design &amp; creatives</a></h5>
+            <p>The automated process starts as soon as your clothes go into.</p>
+            <a href="#" class="product_btn" tabindex="-1">Apply Now</a>
+          </div>
+          <div class="stickers">
+            <span>Remote</span>
+          </div>
+        </div>
+      </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+      </div>
+      </div>
+    </section>
+
+
+    <section class="about-area gray-bg section-padding2">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-xl-6 col-lg-7 col-md-10">
+            <div class="support-location-img">
+              <img src="./static/jobsco/about.png" alt="">
+            </div>
+          </div>
+          <div class="col-xl-5 col-lg-5 col-md-10">
+            <div class="right-caption">
+
+              <div class="section-tittle section-tittle3">
+                <h2>FIND YOUR DREAM JOBS</h2>
+              </div>
+              <div class="support-caption">
+                <p class="pera-top">The basic idea behind this project is to provide ease to people for finding the best
+                  jobs based on their skills that the person mentioned in their resume. It’s very difficult for everyone
+                  to find out suitable jobs. The objective of this project is to suggest the top jobs from the dataset
+                  based on the skills of the person. first extracting the skills from the resume using pyresparser.</p>
+                <a href="#" class="btn about-btn">Find Your job</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-tittle">
+          <h2>Talents</h2>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="job-category section-padding">
+      <div class="container">
+
+        <div class="row justify-content-center mb-55">
+          <div class="col-xl-8">
+            
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+
+
+  </main>
+  
+</body>
+
+</html>
